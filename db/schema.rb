@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_21_140547) do
+ActiveRecord::Schema.define(version: 2018_11_23_080004) do
 
   create_table "article_attachments", force: :cascade do |t|
     t.integer "attachment_id"
@@ -21,13 +21,15 @@ ActiveRecord::Schema.define(version: 2018_11_21_140547) do
 
   create_table "articles", force: :cascade do |t|
     t.integer "design_id"
-    t.string "title"
+    t.text "title"
     t.text "body"
     t.string "cover"
     t.integer "year_id"
+    t.boolean "published"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "pic"
+    t.string "articleattachments"
   end
 
   create_table "attachmennts", force: :cascade do |t|
