@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :articleattachments %>
+    <%= form.file_field :articleattachments %>
+  </div>
+
+  <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
@@ -24,11 +29,6 @@
   <div class="field">
     <%= form.label :body %>
     <%= form.text_area :body %>
-  </div>
-
-  <div class="field">
-    <%= form.label :attachments %>
-    <%= form.file_field :attachments, multiple: true %>
   </div>
 
   <div class="actions">

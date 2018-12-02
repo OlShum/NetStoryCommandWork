@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_11_23_080004) do
     t.string "articleattachments"
   end
 
-  create_table "attachmennts", force: :cascade do |t|
+  create_table "attachments", force: :cascade do |t|
     t.string "type"
     t.string "url"
     t.datetime "created_at", null: false
